@@ -86,7 +86,7 @@ function Index() {
 
     function parseAddressInfo(chainId: number, address: string) {
         let data = chainId.toString(16).slice(-8) + address
-        if (data.length % 2 != 0) {
+        if (data.length % 2 !== 0) {
             data = '0' + data
         }
         return data
