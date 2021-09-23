@@ -67,7 +67,7 @@ function Index() {
         if(hexAddressInput.startsWith(NEW_PREFIX)) {
             return;
         }
-        if(utils.isAddress(hexAddressInput)) {
+        if(!utils.isAddress(hexAddressInput)) {
             return;
         }
         let address: string
